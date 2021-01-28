@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* CSS Document */
+	
+/*FONTS*/
+	
+	.h1{
+		font-family: "holtwood-one-sc";
+		font-size: 36px;
+		background-color: black;
+	
+	}
+	
+	.ldtxt{
+		font-family: montserrat;
+		font-size: 36px;
+		background-color: #000000;
+		position:inherit;
+	}
+	
+	.h2{
+		font-family: 'Black Bruno';
+		font-size: 36px;
+	}
+	
+	.h5{
+		font-family: "Black Bruno";
+		font-size: 36px;
+	}
+	
+	.p {
+		font-family: montserrat;
+		font-size: 20px;
+		font-weight: normal;
+		text-align: justify-all;
+		background-color: none;
+		width: 100%;
+	}
+	
+	.center{
+		text-align: center;
+		width: 100%;
+	}
+	
+	.btn{
+		-webkit-transition: 0.2s all ease;
+		padding: 35px 65px;
+		border: 1px solid white;
+		margin-top: 250px;
+		align-items: center;
+		color: #ffffff;
+		font-family: montserrat;
+		font-size: 50px;
+		letter-spacing: 5px;
+		display: inline-block;
+	}
+	
+	.btn:hover{
+		color: #000000;
+		background-color: #ffffff;
+	}
+	
+	/*NAVIGATION*/
+	.nav-font{
+		font-family: cambo;
+		font-size: 30px;
+		font-weight: 600;
+		font-variant-caps: all-petite-caps;
+		word-break: 20px;
+		font-kerning: 50px;
+		text-align: center;
+		color: deeppink;
+	}	
+	
+	.nav.img{
+		display: inline;
+		
+	}
+	
+ul {
+        position: inline-block;
+	    list-style-type:none;
+        margin: 0;
+        padding: 0;
+        background-color: #;
+	    float: none;
+	    text-align: center;
+			
+}
+	
+
+
+li {
+        display: inline-block;
+	    float:none;
+	    align:center;
+	    text-align: center;
+}
+
+li a {
+        display: block;
+        color: #000000;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+}
+	
+	
+	a:nav-link{
+		color: #000000;
+		text-decoration: none;
+		
+	}
+	
+	a:nav-link active{
+	    color: #000000;
+		text-transform: uppercase;
+		
+	}
+	
+	a:nav-visited{
+		color: #A2A2A2;
+		text-decoration: none;
+	}
+	
+	a:nav-hover{
+		color: #2CBB51;
+	}
+
+	#wrapper{
+	width:100%;
+	height:2400px;
+	background:#FFFFFF;
+	margin:auto;
+}
+	
+	/* SHIFT */
+nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #F1C40F;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+	
+	/*Different Sections*/
+	#nav-bar{
+		position: fixed;
+		width:100%;
+		height: 70px;
+		background: #ff6f59;
+		margin: auto;
+		padding-top: 10px;
+		text-align: center;
+	}
+	
+	#landing{
+		padding-top: 70px;
+		width:100%;
+		height: 39%;
+		background: #ff6f59;
+		margin: auto;
+	}
+	
+	#history{
+		padding-top: 70px;
+		width:100%;
+		height: 39%;
+		background: #FDFDFD;
+		margin: auto;
+	}
+	
+	#footer{
+		padding-bottom: 0px;
+		width:100%;
+		height: 60px;
+		background: #efeded;
+		margin: auto;
+		position:fixed;	
+	}
+	
+	#bottomleft{
+		position: absolute;
+		width: 50%;
+		height: 20%;
+		background: #ff6f59;
+		float: left;
+		
+	}
+	
+	#bottomright{
+		position: absolute
+		width: 50%;
+		height: 20%;
+		float: right;
+	}
+	
+<!--Animation-->
+	.fade-in {
+animation: fadeIn ease 20s;
+-webkit-animation: fadeIn ease 20s;
+-moz-animation: fadeIn ease 20s;
+-o-animation: fadeIn ease 20s;
+-ms-animation: fadeIn ease 20s;
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+	
+	
+
+</style>
